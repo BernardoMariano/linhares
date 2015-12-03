@@ -3,4 +3,5 @@
 **Running**
     
     npm install
+    npm run bundle-js
     npm run start
