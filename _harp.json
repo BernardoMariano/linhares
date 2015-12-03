@@ -1,0 +1,67 @@
+{
+    "globals": {
+        "title": "Clínica de Patologia e Diagnóstico - Linhares",
+        "doctors": [
+            {
+                "link": "paulo",
+                "name": "Dr. Paulo Linhares",
+                "type": "Medicina Laboratorial",
+                "crm": "52-08900/0",
+                "icon": "lab",
+                "email": "paulo@linhares.com.br",
+                "phone": "(21) 99999-0000",
+                "features": [
+                    "Característica 1",
+                    "Característica 2",
+                    "Característica 3"
+                ],
+                "related_links": [
+                    {
+                        "url": "#",
+                        "title": "Lorem ipsum dolor sit amet"
+                    }
+                ]
+            },
+            {
+                "link": "augusto",
+                "name": "Dr. Augusto Linhares",
+                "type": "Medicina do Trabalho",
+                "crm": "52-66670/0",
+                "icon": "trab",
+                "email": "augusto@linhares.com.br",
+                "phone": "(21) 99999-0000",
+                "features": [
+                    "Característica 1",
+                    "Característica 2",
+                    "Característica 3"
+                ],
+                "related_links": [
+                    {
+                        "url": "#",
+                        "title": "Lorem ipsum dolor sit amet"
+                    }
+                ]
+            },
+            {
+                "link": "patricia",
+                "name": "Dr<sup>a</sup>. Patricia Linhares",
+                "type": "Otorrinolaringologia",
+                "crm": "52-70012/6",
+                "icon": "otorr",
+                "email": "patricia@linhares.com.br",
+                "phone": "(21) 99999-0000",
+                "features": [
+                    "Característica 1",
+                    "Característica 2",
+                    "Característica 3"
+                ],
+                "related_links": [
+                    {
+                        "url": "#",
+                        "title": "Lorem ipsum dolor sit amet"
+                    }
+                ]
+            }
+        ]
+    }
+}

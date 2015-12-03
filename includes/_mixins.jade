@@ -1,0 +1,12 @@
+mixin doctorBox(doctor)
+  article.doctor.col-sm-4
+    .doctor-inner
+      .all-link Médicos
+        //- | 
+        //- span.glyphicon.glyphicon-menu-right
+      a(href="#{ doctor.link }.html").doctor-link
+        .doctor-infos
+          img(src="img/icon-#{ doctor.icon }.png").doctor-icon
+          .doctor-name!= doctor.name
+          .doctor-type!= doctor.type
+          .doctor-crm= "CRM " + doctor.crm

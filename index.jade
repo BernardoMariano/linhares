@@ -1,0 +1,26 @@
+include includes/_mixins.jade
+
+main.container
+  section.doctors.row
+    for doctor in doctors
+      +doctorBox(doctor)
+
+section.clinic
+  .container
+    h2 Dos Linhares para 
+      em você
+    hr.spacer
+    p
+      | Breve apresentação da clínica, lorem ipsum dolor sit amet, consectetur 
+      strong adipiscing elit
+      | , cras a lectus in velit porta tempus. Curabitur nec 
+      strong feugiat risus
+      | , nam eleifend lectus luctus.
+    a(href="#3").clinic-link Saiba mais
+      span.glyphicon.glyphicon-menu-right
+
+section.map
+  .container
+    h2 Encontre-nos
+    hr.spacer
+  #google-maps

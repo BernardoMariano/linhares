@@ -1,0 +1,38 @@
+- var doctor = doctors.filter(function(doc){ return doc.link == current.source })[0]
+main#doctor-page
+  .container
+    ol.breadcrumb
+      li
+        a(href="/") Início
+      li
+        a(href="/") Médicos
+      li.active
+        span!= doctor.name
+    .doctor-info
+      span.info-label Nome
+      span.info-value!= doctor.name
+    .doctor-info
+      span.info-label Área
+      span.info-value= doctor.type
+    .doctor-info
+      span.info-label CRM
+      span.info-value= doctor.crm
+    .doctor-info
+      span.info-label E-mail
+      span.info-value= doctor.email
+    .doctor-info
+      span.info-label Celular
+      span.info-value= doctor.phone
+    .doctor-info
+      span.info-label Características
+      span.info-value
+        ul
+          for feature in doctor.features
+            li= feature
+    .doctor-info
+      span.info-label Links relacionados
+      span.info-value
+        ul
+          for related in doctor.related_links
+            li
+              a(href="#{ related.url }")= related.title

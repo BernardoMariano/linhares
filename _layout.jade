@@ -1,0 +1,16 @@
+doctype
+html
+  head
+    include includes/_head.jade
+    
+  body
+
+    include partials/_menu.jade
+
+    include partials/_presentation.jade
+
+    != yield
+
+    include partials/_footer.jade
+
+    include includes/_scripts.jade

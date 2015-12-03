@@ -1,0 +1,26 @@
+- var doctors_links = doctors.map(function(doctor){ return doctor.link });
+
+section#menu
+  .container
+    .visible-xs.menu-hamburger-wrapper
+      span.glyphicon.glyphicon-menu-hamburger
+      span.glyphicon.glyphicon-chevron-left
+      .logo Linhares
+
+    nav.menu-inner
+      ul.list-unstyled.list-inline
+        li
+          a(href="/" class="#{ current.source == 'index' ? 'active' : '' }").menu-link Home
+        li
+          a(href="/clinica.html" class="#{ current.source == 'clinica' ? 'active' : '' }").menu-link Clínica
+        li.dropdown
+          a(href="javascript:;" data-toggle="dropdown" class="#{ doctors_links.indexOf(current.source) >= 0 ? 'active' : '' }").menu-link.dropdown-toggle Médicos
+            | 
+            span.glyphicon.glyphicon-triangle-bottom
+          ul.dropdown-menu.doctors-submenu
+            for doctor in doctors
+              li
+                a(href="#{ doctor.link }.html")!= doctor.name
+
+      //- include _footer.jade
+.menu-overlay
